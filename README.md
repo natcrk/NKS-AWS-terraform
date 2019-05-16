@@ -34,7 +34,7 @@ Steps:
 
 7 - edit the "terraform.tfvars" file and set your values as per your NKS setup in the pre-reqs as well as the node variables
 
-8 - export your API Token: export NKS_API_TOKEN="<very long string>"
+8 - export your API Token: export NKS_API_TOKEN="very long string"
   
 9 - plan your deployment: terraform plan -out "<your name>"
     example:
