@@ -7,8 +7,11 @@ https://docs.netapp.com/us-en/kubernetes-service/intro-to-terraform-on-nks.html#
 Pre-reqs:
 
 1 - you need to set up NKS (trial or sign up)
+
 2 - Create an Organization
+
 3 - Under "Organization" -> "setup" configure your hyperscaler credentials
+
 4 - Add an ssh-key pair for your client
 
 Steps:
@@ -31,7 +34,7 @@ Steps:
 
 7 - edit the "terraform.tfvars" file and set your values as per your NKS setup in the pre-reqs as well as the node variables
 
-8 - export your API Token: export NKS_API_TOKEN=<very long string>
+8 - export your API Token: export NKS_API_TOKEN="<very long string>"
   
 9 - plan your deployment: terraform plan -out "<your name>"
     example:
