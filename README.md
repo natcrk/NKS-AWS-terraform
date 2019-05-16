@@ -14,7 +14,9 @@ Pre-reqs:
 Steps:
 
 1 - terraform installed as per: https://learn.hashicorp.com/terraform/getting-started/install.html
+
 2 - install the NKS Terraform plugin for your client OS: https://github.com/NetApp/terraform-provider-nks/releases
+
 3 - run "terraform init" and verify the plugin is found: 
 
               netapp@terraform-client:~/terraform$ terraform providers
@@ -22,10 +24,15 @@ Steps:
               └── provider.nks
 
 4 - create a directory for your config files: mkdir AWS-NKS
+
 5 - copy or pull the files from this repository
+
 6 - edit the "main.tf" file and set the "startup_worker_count" variable to the number of worker nodes you require initially
+
 7 - edit the "terraform.tfvars" file and set your values as per your NKS setup in the pre-reqs as well as the node variables
+
 8 - export your API Token: export NKS_API_TOKEN=<very long string>
+  
 9 - plan your deployment: terraform plan -out "<your name>"
     example:
               terraform plan -out "AWS-NKS01"
